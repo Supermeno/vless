@@ -1,6 +1,6 @@
 name = "vless"
 main = "_worker.js"
-compatibility_date = "2026-08-28"
+compatibility_date = "2024-03-20"
 
 # Cloudflare Workers compatibility flags
 # Enable Node.js compatibility for crypto.subtle
@@ -15,5 +15,6 @@ compatibility_flags = ["nodejs_compat"]
 
 PROXYIP = "cdn-b100.xn--b6gac.eu.org"  # wrangler secret put PROXYIP
 PROXY_LIST_URL = "https://raw.githubusercontent.com/gprox-galaxy/Cloudflare-Galaxytunnel/refs/heads/main/PROXYIP.txt"              # wrangler secret put PROXY_LIST_URL
-DNS_RESOLVER_URL = ""            # wrangler secret put DNS_RESOLVER_URL
+DNS_RESOLVER_URL = "https://cloudflare-dns.com/dns-query",
+    "https://dns.google/dns-query"            # wrangler secret put DNS_RESOLVER_URL
 
