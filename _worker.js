@@ -1,4 +1,4 @@
-import { connect } from "./sockets.js";
+import { connect } from "cloudflare:sockets";
 
 // ============================================
 // DEFAULT CONFIGURATION & ENVIRONMENT
